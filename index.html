@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pão & Afeto — padaria e cafeteria artesanal." />
+    <title>Pão & Afeto | Padaria & Cafeteria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">☀️ Fornadas quentinhas todos os dias, a partir das 6h.</div>
+    <header><a class="logo" href="#inicio">Pão <i>&</i> Afeto</a><nav><a href="#produtos">Produtos</a><a href="#encomendas">Encomendas</a><a href="#visite">Visite-nos</a></nav><button class="bag" id="open-cart">Sacola <b id="bag-count">0</b></button></header>
+    <main>
+      <section class="hero" id="inicio"><div class="hero-copy"><p class="kicker">PADARIA ARTESANAL • DESDE 2016</p><h1>O melhor do dia começa <em>quentinho.</em></h1><p>Pães de fermentação natural, doces afetivos e cafés especiais para acompanhar a sua rotina.</p><div class="actions"><a class="button primary" href="#produtos">Ver vitrine</a><a class="button ghost" href="#encomendas">Fazer encomenda</a></div></div><div class="hero-photo"><div class="round-label">feito à mão<br /><span>com tempo & afeto</span></div></div></section>
+      <section class="highlights"><div><span>🌾</span><b>Ingredientes selecionados</b><p>Receitas simples e honestas.</p></div><div><span>🥖</span><b>Forno todo dia</b><p>Sempre fresco para você.</p></div><div><span>🛵</span><b>Retire ou receba</b><p>Pedidos pelo WhatsApp.</p></div></section>
+      <section class="catalog" id="produtos"><div class="title-row"><div><p class="kicker">NOSSA VITRINE</p><h2>Um carinho em cada mordida.</h2></div><p>Escolha seus favoritos. Para encomendas especiais, fale conosco.</p></div><div class="categories"><button class="active" data-category="todos">Tudo</button><button data-category="paes">Pães</button><button data-category="doces">Doces</button><button data-category="cafe">Cafés</button><button data-category="kits">Kits</button></div><div class="grid" id="product-grid"></div></section>
+      <section class="order" id="encomendas"><div><p class="kicker">ENCOMENDAS ESPECIAIS</p><h2>Vai receber gente?<br />A gente assa o carinho.</h2><p>Monte uma cesta de café da manhã, reserve salgados ou deixe o bolo da sua comemoração por nossa conta.</p><a class="button dark" target="_blank" rel="noreferrer" href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda.">Pedir orçamento no WhatsApp</a></div><div class="order-card"><span>Para encomendar</span><b>48h</b><p>de antecedência para bolos, kits e grandes quantidades.</p><hr /><small>Retirada na loja ou entrega sob consulta.</small></div></section>
+      <section class="visit" id="visite"><div class="visit-photo"></div><div class="visit-copy"><p class="kicker">NOSSA CASA</p><h2>Cheiro de pão,<br />cara de bairro.</h2><p><strong>📍 Rua dos Ipês, 88 — Centro</strong>Segunda a sábado, das 6h às 20h<br />Domingos, das 7h às 13h</p><a href="https://wa.me/5511999999999?text=Olá!" target="_blank" rel="noreferrer">Falar com a padaria →</a></div></section>
+    </main>
+    <footer><a class="logo" href="#inicio">Pão <i>&</i> Afeto</a><span>© 2026 • Feito com calma, servido com afeto.</span><span>Instagram · WhatsApp</span></footer>
+    <aside class="cart" id="cart" aria-hidden="true"><div class="cart-top"><div><p class="kicker">SUA SACOLA</p><h2>Que delícia!</h2></div><button id="close-cart" aria-label="Fechar">×</button></div><div class="items" id="cart-items"><p class="empty">Sua sacola ainda está vazia.<br />A vitrine está esperando por você.</p></div><div class="cart-bottom"><div><span>Subtotal</span><b id="total">R$ 0,00</b></div><button class="button primary" id="checkout" disabled>Enviar pedido pelo WhatsApp</button><small>Confirme retirada, entrega e pagamento pelo WhatsApp.</small></div></aside><div class="shade" id="shade"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
